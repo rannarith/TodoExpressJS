@@ -1,0 +1,11 @@
+extends layout
+
+block content
+   form(method='POST' action='create')
+        | Task:
+        br
+        input(type='text', name='name')
+        br
+        button(type='submit') Add Task
+        br
+        a(href="/todos/list") Go to list
