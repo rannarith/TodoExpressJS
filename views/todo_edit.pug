@@ -1,0 +1,8 @@
+extends layout
+
+block content
+   h1 #{total}
+   form(method='POST')
+      | Task
+      input(type='text', name='name', value=todo.name || '')
+      button(type='submit') Update

@@ -2,8 +2,9 @@ extends layout
 
 block content
     form
+        a(href='/todos') Add New
         ul
             each todo in todos
                 li #{todo.name}
                 a(href=`${todo.id}/delete`) Delete 
-                a(href=`${todo.id}/edit`) Edit
+                a(href='/todos/edit/' + todo.id) Edit

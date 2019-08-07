@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 // Create to Schema
 const TodoSchema = new Schema ({
     name: {type: String, required: true, max: 100},
+    status: Boolean
 });
 
 // Export the model 

@@ -10,6 +10,5 @@ router.get('/', todo_C.todo_home);
 router.get('/list', todo_C.todo_list);
 // Create todo Task 
 router.post('/create', todo_C.todo_create);
-router.get('/:id/delete', todo_C.todo_delete);
-router.post('/:id/edit', todo_C.todo_edit);
+router.use('/edit/:id', todo_C.todo_edit);
 module.exports = router;
